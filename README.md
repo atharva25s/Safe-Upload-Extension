@@ -35,7 +35,7 @@
    - GitLab CI automatically builds Docker image, pushes to Docker Hub, and deploys it to AWS ECS.
 
 ## How does it look?
-    (Architecture)[favicon_io/arch.png]
+   ![Architecture](favicon_io/arch.png)
 
 ## Tech Stack
 
