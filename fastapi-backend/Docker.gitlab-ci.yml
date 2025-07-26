@@ -1,0 +1,24 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build
+
+
+variables:
+  IMAGE_NAME: $DOCKER_USER/safe-upload-extension
+  TAG: latest
+
+before_script:
+  - docker login -u "$DOCKER_USER" -p "$DOCKER_PASS"
+
+build:
+  stage: build
+  script:
+    - docker build -t $IMAGE_NAME:$TAG .
+    - docker push $IMAGE_NAME:$TAG
+
+
+

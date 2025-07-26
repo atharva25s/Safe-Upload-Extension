@@ -1,0 +1,3 @@
+include:
+  - local: 'Docker.gitlab-ci.yml'
+  - local: 'Deploy-ECS.gitlab-ci.yml'
