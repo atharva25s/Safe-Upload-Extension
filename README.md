@@ -18,7 +18,7 @@
 ## How does it work?
 
 1.  **ML Models (Random Forest & Linear)**  
-   Trained on labeled file datasets to predict a "confidentiality score".
+   - Trained on labeled file datasets to predict a "confidentiality score".
 
 2.  **FastAPI Backend**  
    - Exposes a `/predict` API that accepts file features and returns predictions.
@@ -34,7 +34,8 @@
 4.  **CI/CD Pipeline**  
    - GitLab CI automatically builds Docker image, pushes to Docker Hub, and deploys it to AWS ECS.
 
----
+## How does it look?
+    (Architecture)[favicon_io/arch.png]
 
 ## Tech Stack
 
@@ -48,7 +49,7 @@
 |  CI/CD            | GitLab CI/CD + DockerHub         |
 |  File Features    | File name, extension, size, entropy, string patterns, etc. |
 
----
+
 
 ## Local Setup
 
